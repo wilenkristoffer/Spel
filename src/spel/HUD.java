@@ -18,7 +18,7 @@ public class HUD {
 
         greenValue = Game.clamp(greenValue, 0, 255);
 
-        greenValue = HEALTH *2;
+        greenValue =  255 * HEALTH / 100;;
 
         score++;
 
@@ -29,7 +29,7 @@ public class HUD {
         g.setColor(Color.gray);
         g.fillRect(15,15,200,32);
 
-        g.setColor(new Color(75, greenValue,0));
+        g.setColor(new Color(150, greenValue,0));
         g.fillRect(15,15, HEALTH* 2,32);
 
         g.setColor(Color.white);
